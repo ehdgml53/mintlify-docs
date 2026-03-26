@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "GrowFit 매뉴얼",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -11,58 +11,73 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "통합 매뉴얼",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "GrowFit 소개",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "guide/index",
+              "guide/learning-areas"
             ]
           },
           {
-            "group": "Customization",
+            "group": "시작하기",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "guide/getting-started",
+              "guide/ui-overview"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "단계별 AI 학습",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "guide/project-management",
+              "guide/llm-practice",
+              "guide/prompt-engineering",
+              "guide/knowledge-base",
+              "guide/knowledge-base-usage",
+              "guide/mcp",
+              "guide/agent-builder",
+              "guide/agent-builder-usage"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "학습 관리",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "guide/learning-management"
+            ]
+          },
+          {
+            "group": "도움말",
+            "pages": [
+              "guide/faq"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "강사 매뉴얼",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "시작하기",
             "pages": [
-              "api-reference/introduction"
+              "instructor/index",
+              "instructor/getting-started",
+              "instructor/dashboard"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "강의 운영",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "instructor/course-management",
+              "instructor/student-management",
+              "instructor/usage-stats"
+            ]
+          },
+          {
+            "group": "교육 콘텐츠",
+            "pages": [
+              "instructor/learning-materials",
+              "instructor/mcp-agent"
             ]
           }
         ]
@@ -71,14 +86,9 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "GrowFit 플랫폼",
+          "href": "https://growfit.kr",
+          "icon": "rocket"
         }
       ]
     }
@@ -90,33 +100,25 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "문의하기",
+        "href": "mailto:bct@bctone.kr"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "GrowFit 시작하기",
+      "href": "https://growfit.kr"
     }
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "claude",
+      "chatgpt"
+    ]
   },
   "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+    "socials": {}
   }
 }
