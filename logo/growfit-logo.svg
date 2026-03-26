@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="36" viewBox="0 0 160 36">
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a855f7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7e22ce;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- 아이콘 박스 (32×32, radius 8) -->
+  <rect x="0" y="2" width="32" height="32" rx="8" fill="url(#logoGrad)"/>
+
+  <!-- Layers SVG icon (white, centered in box) -->
+  <g transform="translate(6, 8)" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M10 0L0 5l10 5 10-5-10-5z"/>
+    <path d="M0 15l10 5 10-5"/>
+    <path d="M0 10l10 5 10-5"/>
+  </g>
+
+  <!-- GrowFit 텍스트 -->
+  <text x="42" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#0f172a">GrowFit</text>
+
+  <!-- AI 뱃지 -->
+  <rect x="108" y="12" width="24" height="14" rx="4" fill="#7c3aed"/>
+  <text x="120" y="22.5" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', 'Segoe UI', sans-serif" font-size="10" font-weight="600" fill="white" text-anchor="middle">AI</text>
+</svg>
