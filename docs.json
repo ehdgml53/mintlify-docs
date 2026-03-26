@@ -28,9 +28,8 @@
             ]
           },
           {
-            "group": "단계별 AI 학습",
+            "group": "5단계 AI 실습",
             "pages": [
-              "guide/project-management",
               "guide/llm-practice",
               "guide/prompt-engineering",
               "guide/knowledge-base",
@@ -43,7 +42,8 @@
           {
             "group": "학습 관리",
             "pages": [
-              "guide/learning-management"
+              "guide/learning-management",
+              "guide/project-management"
             ]
           },
           {
