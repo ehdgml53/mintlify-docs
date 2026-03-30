@@ -82,14 +82,14 @@
           {
             "group": "교육 콘텐츠",
             "pages": [
-              "guide/llm-practice",
-              "guide/prompt-engineering",
-              "guide/knowledge-base",
-              "guide/knowledge-base-usage",
-              "guide/mcp",
-              "guide/agent-builder",
-              "guide/agent-builder-usage",
-              "guide/class-templates"
+              "instructor/llm-practice",
+              "instructor/prompt-engineering",
+              "instructor/knowledge-base",
+              "instructor/knowledge-base-usage",
+              "instructor/mcp",
+              "instructor/agent-builder",
+              "instructor/agent-builder-usage",
+              "instructor/class-templates"
             ]
           }
         ]
