@@ -55,7 +55,8 @@
           {
             "group": "도움말",
             "pages": [
-              "guide/faq"
+              "guide/faq",
+              "guide/contact"
             ]
           }
         ]
