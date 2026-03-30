@@ -82,8 +82,14 @@
           {
             "group": "교육 콘텐츠",
             "pages": [
-              "instructor/learning-materials",
-              "instructor/mcp-agent"
+              "guide/llm-practice",
+              "guide/prompt-engineering",
+              "guide/knowledge-base",
+              "guide/knowledge-base-usage",
+              "guide/mcp",
+              "guide/agent-builder",
+              "guide/agent-builder-usage",
+              "guide/class-templates"
             ]
           }
         ]
