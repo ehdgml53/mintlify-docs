@@ -40,6 +40,12 @@
             ]
           },
           {
+            "group": "강의 템플릿",
+            "pages": [
+              "guide/class-templates"
+            ]
+          },
+          {
             "group": "학습 관리",
             "pages": [
               "guide/learning-management",
