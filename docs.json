@@ -84,10 +84,8 @@
             "pages": [
               "instructor/llm-practice",
               "instructor/prompt-engineering",
-              "instructor/knowledge-base",
               "instructor/knowledge-base-usage",
               "instructor/mcp",
-              "instructor/agent-builder",
               "instructor/agent-builder-usage",
               "instructor/class-templates"
             ]
@@ -113,7 +111,7 @@
     "links": [
       {
         "label": "문의하기",
-        "href": "mailto:bct@bctone.kr"
+        "href": "https://makebct.net/growfit-qa"
       }
     ],
     "primary": {
