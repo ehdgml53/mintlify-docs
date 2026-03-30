@@ -38,76 +38,66 @@ icon: "robot"
 
 ---
 
-## 기본 워크플로우 노드 6종
+## CORE — 핵심 노드 2종
 
 <CardGroup cols={2}>
-  <Card title="시작 노드 (Start)" icon="play">
-    워크플로우의 **시작점**. 사용자의 초기 입력 메시지를 받아 다음 단계로 전달합니다. **필수 노드**입니다.
-  </Card>
-
-  <Card title="종료 노드 (End)" icon="flag-checkered">
-    워크플로우 실행을 마치고 **최종 결과를 사용자에게 출력**합니다. 모든 흐름은 이 노드에서 끝납니다.
-  </Card>
-
-  <Card title="프롬프트 노드 (Prompt)" icon="message">
+  <Card title="프롬프트 (Prompt)" icon="message">
     LLM에게 **구체적인 지시**를 전달합니다. 역할(Persona) 부여, 텍스트 생성 등에 사용합니다.
   </Card>
 
-  <Card title="스킬 노드 (Skill)" icon="star">
-    **특정 기능을 수행**하는 도구입니다. 퀴즈 생성, 문법 교정, 학습 플래너 등 미리 정의된 기능을 실행합니다.
-  </Card>
-
-  <Card title="지식베이스 노드 (Knowledge)" icon="database">
-    **RAG 기술을 활용**합니다. 업로드된 문서에서 질문 관련 내용을 검색/참조합니다.
-  </Card>
-
-  <Card title="MCP 도구 노드 (MCP)" icon="plug">
-    **외부 서비스를 연동**합니다. 실시간 웹 검색, 계산, 환율 조회 등을 수행합니다.
+  <Card title="종료 (End)" icon="flag-checkered">
+    워크플로우 실행을 마치고 **최종 결과를 사용자에게 출력**합니다. 모든 흐름은 이 노드에서 끝납니다.
   </Card>
 </CardGroup>
 
 ---
 
-## 로직 & 고급 노드 6종
+## TOOLS — 도구 노드 4종
 
 <CardGroup cols={2}>
-  <Card title="분류 노드 (Classification)" icon="tags">
+  <Card title="스킬 (Skill)" icon="star">
+    **특정 기능을 수행**하는 도구입니다. 퀴즈 생성, 문법 교정, 학습 플래너 등 미리 정의된 기능을 실행합니다.
+  </Card>
+
+  <Card title="지식베이스 (Knowledge)" icon="database">
+    **RAG 기술을 활용**합니다. 업로드된 문서에서 질문 관련 내용을 검색/참조합니다.
+  </Card>
+
+  <Card title="MCP" icon="plug">
+    **외부 서비스를 연동**합니다. 실시간 웹 검색, 계산, 환율 조회 등을 수행합니다.
+  </Card>
+
+  <Card title="가드레일 (Guardrail)" icon="shield-halved">
+    입출력 데이터를 검사하고 **부적절한 내용을 필터링/보안 강화**합니다.
+
+    예: "응답에 개인정보 포함 시 마스킹 처리"
+  </Card>
+</CardGroup>
+
+---
+
+## LOGIC — 로직 노드 4종
+
+<CardGroup cols={2}>
+  <Card title="분류 (Classification)" icon="tags">
     사용자의 입력 의도를 분석하여 **적절한 경로로 자동 분기**합니다.
 
     예: "문의 내용이 환불/배송/기타 중 어디에 해당하는지 자동 분류"
   </Card>
 
-  <Card title="조건분기 노드 (If/Else)" icon="code-branch">
+  <Card title="조건 분기 (If/Else)" icon="code-branch">
     변수 값이나 특정 조건의 충족 여부에 따라 **흐름을 제어**합니다.
 
     예: "회원 등급이 VIP인 경우 전담 상담원 봇으로 연결"
   </Card>
 
-  <Card title="변환 노드 (Transform)" icon="arrows-spin">
-    데이터 포맷 변경이나 **특정 값 추출/가공**을 수행합니다.
-
-    예: "JSON 응답을 텍스트 리포트로 변환"
-  </Card>
-
-  <Card title="상태설정 노드 (Set State)" icon="floppy-disk">
-    대화 문맥이나 사용자 정보를 **변수에 저장/업데이트**합니다.
-
-    예: "언어 설정이나 관심사 정보를 기억하여 다음 대화에 반영"
-  </Card>
-
-  <Card title="가드레일 노드 (Guardrail)" icon="shield-halved">
-    입출력 데이터를 검사하고 **부적절한 내용을 필터링/보안 강화**합니다.
-
-    예: "응답에 개인정보 포함 시 마스킹 처리"
-  </Card>
-
-  <Card title="반복 노드 (While)" icon="rotate">
+  <Card title="반복 (While)" icon="rotate">
     조건이 충족될 때까지 **특정 단계를 반복 실행**합니다.
 
     예: "경쟁사별로 분석 작업을 반복 수행"
   </Card>
 
-  <Card title="승인 노드 (Human)" icon="user-check">
+  <Card title="사용자 승인 (Human)" icon="user-check">
     사람의 **확인/승인을 받은 후** 다음 단계로 진행합니다.
 
     예: "담당자 확인 후 보고서 최종 발송"
@@ -116,29 +106,47 @@ icon: "robot"
 
 ---
 
-## 멀티모달 노드 3종 + 메모 노드
+## DATA — 데이터 노드 3종
 
 <CardGroup cols={3}>
-  <Card title="비전 분석 노드" icon="eye">
-    이미지 심층 분석 → 인사이트/설명 도출
+  <Card title="변환 (Transform)" icon="arrows-spin">
+    데이터 포맷 변경이나 **특정 값 추출/가공**을 수행합니다.
+
+    예: "JSON 응답을 텍스트 리포트로 변환"
   </Card>
 
-  <Card title="이미지 생성 노드" icon="image">
-    텍스트 프롬프트 → 새 이미지 창작
+  <Card title="상태 설정 (Set State)" icon="floppy-disk">
+    대화 문맥이나 사용자 정보를 **변수에 저장/업데이트**합니다.
+
+    예: "언어 설정이나 관심사 정보를 기억하여 다음 대화에 반영"
   </Card>
 
-  <Card title="OCR 추출 노드" icon="scanner-image">
-    이미지 속 텍스트 인식 → 디지털 데이터 변환
-  </Card>
-
-  <Card title="메모 노드" icon="sticky-note">
-    워크플로우 설계 시 메모/설명 추가
+  <Card title="메모 (Memo)" icon="sticky-note">
+    워크플로우 설계 시 **메모/설명을 추가**합니다. 실행에는 영향을 주지 않습니다.
   </Card>
 </CardGroup>
 
-<Tip>
-비전 분석 노드 뒤에 **'조건 분기' 노드**를 연결하면, 이미지 분석 결과에 따라 다른 처리를 수행할 수 있습니다.
-</Tip>
+---
+
+## MULTIMODAL — 멀티모달 노드 3종
+
+<Warning>
+멀티모달 노드는 현재 **준비 중**입니다. 향후 업데이트를 통해 제공될 예정입니다.
+</Warning>
+
+<CardGroup cols={3}>
+  <Card title="비전 분석" icon="eye">
+    이미지 심층 분석 → 인사이트/설명 도출
+  </Card>
+
+  <Card title="이미지 생성" icon="image">
+    텍스트 프롬프트 → 새 이미지 창작
+  </Card>
+
+  <Card title="OCR 추출" icon="scanner-image">
+    이미지 속 텍스트 인식 → 디지털 데이터 변환
+  </Card>
+</CardGroup>
 
 ---
 
