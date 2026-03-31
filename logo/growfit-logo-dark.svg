@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="160" height="36" viewBox="0 0 160 36">
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="48" viewBox="0 0 220 48">
   <defs>
     <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#a855f7;stop-opacity:1" />
@@ -6,20 +6,20 @@
     </linearGradient>
   </defs>
 
-  <!-- 아이콘 박스 (32×32, radius 8) -->
-  <rect x="0" y="2" width="32" height="32" rx="8" fill="url(#logoGrad)"/>
+  <!-- 아이콘 박스 -->
+  <rect x="0" y="4" width="40" height="40" rx="10" fill="url(#logoGrad)"/>
 
-  <!-- Layers SVG icon (white, centered in box) -->
-  <g transform="translate(6, 8)" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
-    <path d="M10 0L0 5l10 5 10-5-10-5z"/>
-    <path d="M0 15l10 5 10-5"/>
-    <path d="M0 10l10 5 10-5"/>
+  <!-- Layers SVG icon -->
+  <g transform="translate(7, 11)" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M13 0L0 6.5l13 6.5 13-6.5-13-6.5z"/>
+    <path d="M0 19.5l13 6.5 13-6.5"/>
+    <path d="M0 13l13 6.5 13-6.5"/>
   </g>
 
-  <!-- GrowFit 텍스트 → 다크모드: 흰색 -->
-  <text x="42" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#f1f5f9">GrowFit</text>
+  <!-- GrowFit 텍스트 (다크모드: 흰색) -->
+  <text x="52" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#f1f5f9">GrowFit</text>
 
-  <!-- AI 뱃지 → 다크모드: 더 밝은 보라 배경 -->
-  <rect x="108" y="12" width="24" height="14" rx="4" fill="#9333ea"/>
-  <text x="120" y="22.5" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', 'Segoe UI', sans-serif" font-size="10" font-weight="600" fill="white" text-anchor="middle">AI</text>
+  <!-- AI 뱃지 (다크모드: 밝은 보라) -->
+  <rect x="156" y="14" width="32" height="20" rx="5" fill="#9333ea"/>
+  <text x="172" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="white" text-anchor="middle">AI</text>
 </svg>
