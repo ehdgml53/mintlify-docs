@@ -6,9 +6,6 @@
     </linearGradient>
   </defs>
 
-  <!-- 다크모드 배경 (미리보기용) -->
-  <rect x="-10" y="-10" width="180" height="56" fill="#1e293b"/>
-
   <!-- 아이콘 박스 (32×32, radius 8) -->
   <rect x="0" y="2" width="32" height="32" rx="8" fill="url(#logoGrad)"/>
 
